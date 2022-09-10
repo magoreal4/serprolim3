@@ -319,3 +319,4 @@ env/
 /**/node_modules/
 
 .vscode
+cache/
