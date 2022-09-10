@@ -18,6 +18,7 @@ urlpatterns = [
     path("documents/", include(wagtaildocs_urls)),
     path("search/", search_views.search, name="search"),
     path('sitemap.xml', sitemap),
+    path("", include(favicon_urls)),
 ]
 
 
@@ -32,5 +33,4 @@ if settings.DEBUG:
 
 urlpatterns = urlpatterns + [
     path("", include(wagtail_urls)),
-    path("", include(favicon_urls)),
 ]
