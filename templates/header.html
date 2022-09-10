@@ -1,0 +1,50 @@
+{% load static %}
+{% comment %} {% load static navigation_tags svg %} {% endcomment %}
+{% comment %} <header class="{{ class }}">{% endcomment %}
+
+
+  <header class="{{ class }}">
+    <div class="flex items-center justify-between h-full md:h-16 relative">
+
+      <div class="hidden md:flex md:items-center md:gap-12 z-50">
+        <a href="/" class="hidden absolute left-0 top-1 pb-2 rounded-br-lg bg-primary uppercase sm:inline-flex">
+          <img src="{% static 'img/logo-texto.png' %}" alt="SERPROLIM">
+        </a>
+      </div>
+
+      <nav aria-labelledby="header-navigation" class="text-xl uppercase text-black">
+        <h2 class="sr-only" id="header-navigation">Header navigation</h2>
+
+        <ul id="menu"
+          class="bg-primary bg-opacity-90 py-9 md:py-0 w-full fixed md:relative duration-500 transform -translate-y-full md:-translate-y-0 flex flex-col md:flex-row items-center gap-9 ">
+          <li>
+            <a class="transition hover:text-gray-500/75" href="/#cotiza">Cotiza</a>
+          </li>
+          <li>
+            <a class="transition hover:text-gray-500/75" href="/#clientes">Servicios</a>
+          </li>
+          <li>
+            <a class="transition hover:text-gray-500/75" href="/#preguntas">Preguntas</a>
+          </li>
+          <li>
+            <a class="transition hover:text-gray-500/75" href="/blog">Blog</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div>
+      </div>
+
+      <div class="block md:hidden fixed top-3 right-4 sombra-x2">
+        <button id="botonMenu" class="p-3 text-black bg-primary rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+  </header>
